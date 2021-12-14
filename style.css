@@ -1,0 +1,80 @@
+body{
+    background-color: lightcoral;
+}
+
+.contenedor{
+    background-color: rgb(81, 188, 214);
+    width: 80%;
+    margin: 5rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+    height: 80vh;
+
+    display: flex;
+    /* flex-flow: row-reverse; */
+    row-gap: 1rem;
+    /* justify-content: flex-end; */
+    /* align-items: center; */
+}
+
+.contenedor > *{
+    
+
+
+}
+
+[class*="tarjeta"]{
+    background-color: olive;
+    padding: .5rem;
+    flex-basis: 5rem;
+    flex-grow: 1;
+    transition: .3s;
+}
+
+
+[class*="tarjeta"]:hover{
+    flex-grow: 10;
+}
+
+[class*="tarjeta"]:hover > .hover_visible{
+    flex-grow: 10;
+    opacity: 1;
+}
+
+.hover_visible{
+    width: 10rem;
+    position: absolute;
+    left: 5rem;
+    opacity: 0;
+    transition: .3s;
+
+}
+
+.tarjeta-1{
+    background-color: rgb(112, 216, 199);
+    position: relative;
+    overflow: hidden;
+}
+.tarjeta-2{
+    background-color: rgb(133, 216, 112);
+    position: relative;
+    overflow: hidden;
+
+}
+.tarjeta-3{
+    background-color: rgb(216, 197, 112);
+    position: relative;
+    overflow: hidden;
+    
+}
+.tarjeta-4{
+    background-color: rgb(112, 122, 216);
+    position: relative;
+    overflow: hidden;
+}
+.tarjeta-5{
+    background-color: rgb(216, 112, 176);
+    position: relative;
+    overflow: hidden;
+}
